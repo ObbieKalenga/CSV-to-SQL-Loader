@@ -112,12 +112,15 @@ The notebook runs top to bottom in five short stages:
    Inserting rows 200/200...
    Done! Obbie you have Inserted 200 rows.
    ```
+   ![Loader output](images/load_output.png)
+
 
 5. **Confirm in SQL Server**
    ```sql
    SELECT COUNT(*) FROM dbo.customer_age;   -- 200
    SELECT TOP (10) * FROM dbo.customer_age;
    ```
+![Rows in SQL Server](images/sql_result.png)
 
 ---
 
@@ -146,7 +149,6 @@ the same.
 - The connection uses **Windows (trusted) authentication**. For SQL
   authentication, swap `Trusted_Connection=yes;` for `UID=...;PWD=...;` and keep
   those credentials in a git-ignored `.env` rather than in the notebook.
-- No real server names or credentials are committed to this repo.
 
 ---
 
