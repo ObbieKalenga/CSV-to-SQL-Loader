@@ -146,7 +146,6 @@ the same.
 - The connection uses **Windows (trusted) authentication**. For SQL
   authentication, swap `Trusted_Connection=yes;` for `UID=...;PWD=...;` and keep
   those credentials in a git-ignored `.env` rather than in the notebook.
-- No real server names or credentials are committed to this repo.
 
 ---
 
